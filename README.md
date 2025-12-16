@@ -16,6 +16,8 @@ Personal portfolio website showcasing software engineering projects and technica
 - Intro loader animation
 - Language switcher (French/English)
 
+> **Note:** The contact form will be fully functional once the portfolio is hosted on Hostinger with a custom domain. Currently, it serves as a UI demonstration.
+
 ## Structure
 
 ```
