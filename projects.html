@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joggerst E.</title>
+    <link rel="icon" type="image/png" href="src/assets/logo_portfolio.png">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <div class="logo">
+                EDOUARD JOGGERST
+                <span data-key="logo-subtitle">Étudiant Ingénieur Logiciel</span>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link" data-key="nav-home">Accueil</a></li>
+                <li><a href="projects.html" class="nav-link" data-key="nav-projets">Projets</a></li>
+                <li><a href="about.html" class="nav-link" data-key="nav-about">À Propos</a></li>
+                <li><button class="btn-contact" data-key="btn-contact">Me Contacter</button></li>
+                <li>
+                    <button id="sound-toggle" class="sound-btn" aria-label="Couper le son">
+                        <div class="sound-wave">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </li>
+                <li><a href="#" id="lang-toggle" class="lang-switch">FR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding-top: 180px;">
+        <div style="margin-bottom: 80px;">
+            <h1 data-key="projects-title">PROJETS TECHNIQUES</h1>
+            <p style="color: #888; max-width: 700px; margin-top: 30px; line-height: 1.8; font-size: 1rem;" data-key="projects-subtitle">
+                Projets démontrant mon expérience en systèmes distribués, backend infrastructure,
+                et developer tooling qui améliore les workflows d'équipe.
+            </p>
+        </div>
+
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="card-content">
+                    <div style="margin-bottom: 15px;">
+                        <span style="background: rgba(255,255,255,0.1); padding: 5px 10px; border-radius: 5px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;">
+                            JAVA / SOCKETS / MULTITHREADING
+                        </span>
+                    </div>
+
+                    <h3 style="font-size: 1.8rem; text-transform: uppercase; margin-bottom: 15px;" data-key="project1-title">
+                        Real-Time Multi-Client Chat System
+                    </h3>
+
+                    <p style="color: #ccc; font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;" data-key="project1-desc">
+                        Application client-serveur temps réel supportant 50+ connexions concurrentes avec broadcasting
+                        de messages thread-safe. Architecture basée sur un thread pool avec protocole de communication
+                        personnalisé pour un broadcasting efficace des messages.
+                    </p>
+
+                    <div style="margin-bottom: 20px;">
+                        <div style="font-size: 0.85rem; color: #888; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px;" data-key="project-tech">
+                            Technologies
+                        </div>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">Java</span>
+                            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">Sockets TCP</span>
+                            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">Multithreading</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <div style="font-size: 0.85rem; color: #888; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;" data-key="project-highlights">
+                            Points Clés
+                        </div>
+                        <ul style="list-style: none; color: #ccc; font-size: 0.9rem; line-height: 1.8;">
+                            <li data-key="project1-h1">→ Support de <strong style="color: white;">50+ connexions simultanées</strong></li>
+                            <li data-key="project1-h2">→ Thread-pool architecture avec protocole custom</li>
+                            <li data-key="project1-h3">→ Gestion edge cases (déconnexions, packets malformés)</li>
+                            <li data-key="project1-h4">→ Monitoring léger (timestamps, events, error logs)</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://github.com/jxgedouard/java-group-chat" target="_blank" class="btn-outlined" data-key="project-view">
+                        Voir le code
+                    </a>
+
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="card-content">
+                    <div style="margin-bottom: 15px;">
+                        <span style="background: rgba(255,255,255,0.1); padding: 5px 10px; border-radius: 5px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;">
+                            PYTHON / SCIKIT-LEARN / ML
+                        </span>
+                    </div>
+
+                    <h3 style="font-size: 1.8rem; text-transform: uppercase; margin-bottom: 15px;" data-key="project2-title">
+                        Wildfire Risk Prediction System
+                    </h3>
+
+                    <p style="color: #ccc; font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;" data-key="project2-desc">
+                        Pipeline ETL automatisé traitant 500+ relevés météorologiques, réduisant la préparation manuelle
+                        des données. Développement d'un pipeline de data processing scalable avec backend services
+                        atteignant 87% de précision avec régression et algorithmes decision-tree.
+                    </p>
+
+                    <div style="margin-bottom: 20px;">
+                        <div style="font-size: 0.85rem; color: #888; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px;" data-key="project-tech">
+                            Technologies
+                        </div>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">Python</span>
+                            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">Scikit-learn</span>
+                            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">Pandas</span>
+                            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">ML</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <div style="font-size: 0.85rem; color: #888; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;" data-key="project-highlights">
+                            Points Clés
+                        </div>
+                        <ul style="list-style: none; color: #ccc; font-size: 0.9rem; line-height: 1.8;">
+                            <li data-key="project2-h1">→ Pipeline ETL automatisé pour <strong style="color: white;">500+ records</strong></li>
+                            <li data-key="project2-h2">→ Accuracy de <strong style="color: white;">87%</strong> avec regression/decision-tree</li>
+                            <li data-key="project2-h3">→ Visualisations: heatmaps, risk mapping, métriques (MAE, RMSE)</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://github.com/ton-repo" target="_blank" class="btn-outlined" data-key="project-view">
+                        Voir le code
+                    </a>
+
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="card-content">
+                    <div style="margin-bottom: 15px;">
+                        <span style="background: rgba(255,255,255,0.1); padding: 5px 10px; border-radius: 5px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;">
+                            PYTHON / FLASK / WEBSOCKET
+                        </span>
+                    </div>
+
+                    <h3 style="font-size: 1.8rem; text-transform: uppercase; margin-bottom: 15px;" data-key="project3-title">
+                        REST API + Project Monitoring Dashboard
+                    </h3>
+
+                    <p style="color: #ccc; font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;" data-key="project3-desc">
+                        Outil interne de développement améliorant le workflow d'équipe en réduisant les étapes manuelles.
+                        Base de données SQLite avec opérations CRUD complètes, authentification JWT, et dashboard temps
+                        réel avec Chart.js. Système de monitoring/logging avec statistiques automatisées et export CSV/JSON.
+                    </p>
+
+                    <div style="margin-bottom: 20px;">
+                        <div style="font-size: 0.85rem; color: #888; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px;" data-key="project-tech">
+                            Technologies
+                        </div>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">Python</span>
+                            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">Flask</span>
+                            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">WebSocket</span>
+                            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">Chart.js</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <div style="font-size: 0.85rem; color: #888; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;" data-key="project-highlights">
+                            Points Clés
+                        </div>
+                        <ul style="list-style: none; color: #ccc; font-size: 0.9rem; line-height: 1.8;">
+                            <li data-key="project3-h1">→ SQLite database avec CRUD complet + <strong style="color: white;">JWT auth</strong></li>
+                            <li data-key="project3-h2">→ Real-time dashboard avec WebSocket et Chart.js</li>
+                            <li data-key="project3-h3">→ Monitoring/logging avec stats auto et export CSV/JSON</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://github.com/ton-repo" target="_blank" class="btn-outlined" data-key="project-view">
+                        Voir le code
+                    </a>
+                    
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="card-content">
+                    <div style="margin-bottom: 15px;">
+                        <span style="background: rgba(255,255,255,0.1); padding: 5px 10px; border-radius: 5px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;">
+                            PYTHON / CLI / AUTOMATION
+                        </span>
+                    </div>
+
+                    <h3 style="font-size: 1.8rem; text-transform: uppercase; margin-bottom: 15px;" data-key="project4-title">
+                        Dev Workflow Automation CLI Tool
+                    </h3>
+
+                    <p style="color: #ccc; font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;" data-key="project4-desc">
+                        Outil CLI automatisant les tâches répétitives de développement (log cleanup, format checks,
+                        test execution) avec architecture modulaire de commandes. Améliore significativement la
+                        productivité des développeurs en réduisant les opérations manuelles.
+                    </p>
+
+                    <div style="margin-bottom: 20px;">
+                        <div style="font-size: 0.85rem; color: #888; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px;" data-key="project-tech">
+                            Technologies
+                        </div>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">Python</span>
+                            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">Scikit-learn</span>
+                            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">Pandas</span>
+                            <span style="background: rgba(59, 130, 246, 0.1); color: #3b82f6; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">ML</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <div style="font-size: 0.85rem; color: #888; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;" data-key="project-highlights">
+                            Points Clés
+                        </div>
+                        <ul style="list-style: none; color: #ccc; font-size: 0.9rem; line-height: 1.8;">
+                            <li data-key="project4-h1">→ Automation de tâches répétitives (cleanup, checks, tests)</li>
+                            <li data-key="project4-h2">→ <strong style="color: white;">Architecture modulaire</strong> de commandes</li>
+                            <li data-key="project4-h3">→ Amélioration significative de la productivité dev</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://github.com/ton-repo" target="_blank" class="btn-outlined" data-key="project-view">
+                        Voir le code
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+        <div style="margin-top: 80px; padding: 60px 20px 40px 20px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 25px; text-transform: uppercase;" data-key="cta-title">Intéressé par mon travail ?</h2>
+            <p style="color: #888; max-width: 600px; margin: 0 auto 45px; line-height: 1.6; font-size: 1rem;" data-key="cta-desc">
+                Je suis toujours ouvert à discuter de nouveaux projets, d'opportunités de collaboration
+                ou simplement d'échanger sur des sujets techniques.
+            </p>
+            <button class="btn-contact btn-outlined" data-key="cta-button">Démarrer une conversation</button>
+        </div>
+
+    </main>
+
+    <div class="modal-overlay" id="contact-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3 style="margin-bottom: 30px; text-transform: uppercase;" data-key="modal-title">Partagez votre vision</h3>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nom" data-key="lbl-name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" data-key="lbl-email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Message" data-key="lbl-msg"></textarea>
+                </div>
+                <button type="submit" class="btn-submit" data-key="btn-send">Envoyer</button>
+            </form>
+            <div style="margin-top: 80px; font-size: 0.8rem; color: #888; display: flex; gap: 30px; align-items: center;">
+                <a href="https://linkedin.com/in/edouard-joggerst" target="_blank" style="color: #888; text-decoration: none; display: flex; align-items: center; gap: 8px; transition: 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#888'">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LINKEDIN
+                </a>
+                <a href="https://github.com/jxgedouard" target="_blank" style="color: #888; text-decoration: none; display: flex; align-items: center; gap: 8px; transition: 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#888'">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                    GITHUB
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">EJ.</div>
+                <div class="footer-copyright">&copy; 2025 Edouard Joggerst. <span data-key="footer-copyright">Tous droits réservés</span>.</div>
+            </div>
+
+            <div class="footer-links">
+                <h4 data-key="footer-nav">Navigation</h4>
+                <ul>
+                    <li><a href="index.html" data-key="nav-home">Accueil</a></li>
+                    <li><a href="projects.html" data-key="nav-projets">Projets</a></li>
+                    <li><a href="about.html" data-key="nav-about">À Propos</a></li>
+                    <li><a href="#" class="btn-contact" style="border: none; padding: 0; background: transparent; text-transform: none; font-size: 0.9rem; color: #888;" data-key="btn-contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-socials">
+                <h4 data-key="footer-socials">Connect</h4>
+                <ul>
+                    <li><a href="https://linkedin.com/in/edouard-joggerst" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/jxgedouard" target="_blank">GitHub</a></li>
+                    <li><a href="src/assets/cv.pdf" target="_blank" download style="color: #888;" data-key="footer-cv">Télécharger CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <audio id="bg-music" loop>
+        <source src="src/assets/background_sound.wav" type="audio/wav">
+    </audio>
+
+    <script src="src/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joggerst E.</title>
+    <link rel="icon" type="image/png" href="src/assets/logo_portfolio.png">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <div class="logo">
+                EDOUARD JOGGERST
+                <span data-key="logo-subtitle">Étudiant Ingénieur Logiciel</span>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link" data-key="nav-home">Accueil</a></li>
+                <li><a href="projects.html" class="nav-link" data-key="nav-projets">Projets</a></li>
+                <li><a href="about.html" class="nav-link" data-key="nav-about">À Propos</a></li>
+                <li><button class="btn-contact" data-key="btn-contact">Me Contacter</button></li>
+                <li>
+                    <button id="sound-toggle" class="sound-btn" aria-label="Couper le son">
+                        <div class="sound-wave">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </li>
+                <li><a href="#" id="lang-toggle" class="lang-switch">FR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div style="display: flex; gap: 80px; align-items: flex-start;">
+            <div style="flex: 1.2;">
+                <h1 data-key="about-title">À PROPOS</h1>
+
+                <div style="margin-top: 40px; line-height: 1.8; color: #ccc;">
+                    <p style="margin-bottom: 25px;" data-key="about-intro">
+                        Étudiant en Mathématiques et Informatique Appliquées à l’Université Paris 1 Panthéon-Sorbonne, je développe des applications logicielles avec un intérêt particulier pour le backend et les systèmes client-serveur.
+                    </p>
+
+                    <p style="margin-bottom: 25px;" data-key="about-approach">
+                        À travers mes projets académiques et personnels, j'ai conçu des APIs, des applications backend et des pipelines de traitement de données, en mettant l'accent sur la clarté du code, la structuration des projets et la fiabilité des fonctionnalités.
+                    </p>
+
+                    <p style="margin-bottom: 25px;" data-key="about-curious">
+                        Curieux et motivé, je cherche à approfondir mes compétences en Software Engineering, notamment sur les bonnes pratiques de développement, la conception de systèmes simples et maintenables, et le travail sur des projets concrets proches des problématiques réelles.
+                    </p>    
+                    <p style="margin-bottom: 25px;" data-key="about-focus">
+                        Domaines d’intérêt et compétences :
+                    </p>
+
+                    <div class="expertise-list">
+                        <div class="expertise-item">
+                            <div class="expertise-icon">⚙️</div> <div class="expertise-content">
+                                <strong style="color: white;" data-key="expertise-backend-title">Ingénierie Logicielle & Développement Backend</strong>
+                                <p data-key="expertise-backend-desc">Développement d'applications backend, APIs REST, architecture client-serveur, bases de la programmation concurrente.</p>
+                            </div>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">🧠</div> <div class="expertise-content">
+                                <strong style="color: white;" data-key="expertise-data-title">Données & Machine Learning Appliqué</strong>
+                                <p data-key="expertise-data-desc">Traitement et analyse de données, pipelines simples, premiers modèles de machine learning avec scikit-learn.</p>
+                            </div>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">🛠️</div> <div class="expertise-content">
+                                <strong style="color: white;" data-key="expertise-tools-title">Outils pour Développeurs</strong>
+                                <p data-key="expertise-tools-desc">Scripts et outils CLI, automatisation de tâches, logging, debugging et attention portée à la qualité du code.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 60px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.15);">
+                        <div style="margin-top: 10px;">
+                            <h3 style="margin-bottom: 30px; font-size: 1.3rem; text-transform: uppercase;" data-key="about-education-title">Parcours</h3>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                                        <strong style="color: white; font-size: 1.1rem;" data-key="about-edu-degree">Licence Mathématiques et Informatique Appliquées</strong>
+                                        <span style="color: #888; font-size: 0.9rem;">2024 – 2026</span>
+                                    </div>
+                                    <div style="color: #888; font-size: 0.9rem; margin-bottom: 10px;">Paris 1 Panthéon-Sorbonne</div>
+                                    <p style="color: #ccc; font-size: 0.95rem; line-height: 1.6;" data-key="about-edu-desc">
+                                        Focus sur l'Analyse Réelle, l'Algèbre Linéaire et les structures de données avancées.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p style="margin-bottom: 25px;" data-key="about-values">
+                        Formation solide en <strong style="color: white;">Analyse Réelle, Algèbre Linéaire, Probabilités & Statistiques</strong>,
+                        avec des compétences en <strong style="color: white;">Algorithms Avancés</strong> et
+                        <strong style="color: white;">Data Structures</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-right-column">
+                <div style="margin-bottom: 25px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.15); border-radius: 15px; padding: 25px; text-align: center;">
+                    <div style="display: inline-block; width: 10px; height: 10px; background: #00ff00; border-radius: 50%; margin-right: 10px; animation: pulse 2s infinite;"></div>
+                    <span style="color: white; font-weight: 600; font-size: 0.9rem;" data-key="about-available">Ouvert aux opportunités</span>
+                    <div style="color: #888; font-size: 0.85rem; margin-top: 10px;" data-key="about-available-desc">Stage • Alternance • Projets</div>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.15); border-radius: 15px; padding: 30px; margin-bottom: 30px;">
+                    <h4 style="margin-bottom: 25px; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;" data-key="about-stack">Tech Stack</h4>
+
+                    <div style="margin-bottom: 25px;">
+                        <div style="color: white; font-weight: 600; margin-bottom: 10px; font-size: 0.9rem;" data-key="about-languages">Languages</div>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 5px; font-size: 0.85rem;">Java</span>
+                            <span style="background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 5px; font-size: 0.85rem;">Python</span>
+                            <span style="background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 5px; font-size: 0.85rem;">SQL</span>
+                            <span style="background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 5px; font-size: 0.85rem;">JavaScript</span>
+                            <span style="background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 5px; font-size: 0.85rem;">HTML/CSS</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <div style="color: white; font-weight: 600; margin-bottom: 10px; font-size: 0.9rem;" data-key="about-data-ai">Data & AI</div>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 5px; font-size: 0.85rem;">Pandas</span>
+                            <span style="background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 5px; font-size: 0.85rem;">NumPy</span>
+                            <span style="background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 5px; font-size: 0.85rem;">Scikit-learn</span>
+                            <span style="background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 5px; font-size: 0.85rem;">Matplotlib</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div style="color: white; font-weight: 600; margin-bottom: 10px; font-size: 0.9rem;" data-key="about-tools">Tools & Frameworks</div>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 5px; font-size: 0.85rem;">Git</span>
+                            <span style="background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 5px; font-size: 0.85rem;">Flask</span>
+                            <span style="background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 5px; font-size: 0.85rem;">SQLite</span>
+                            <span style="background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 5px; font-size: 0.85rem;">Chart.js</span>
+                            <span style="background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 5px; font-size: 0.85rem;">WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Box -->
+                <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.15); border-radius: 15px; padding: 30px;">
+                    <div style="margin-bottom: 25px;">
+                        <div style="font-size: 2.5rem; font-weight: 700; margin-bottom: 5px;">5</div>
+                        <div style="color: #888; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;" data-key="stat-projects">Projets Techniques</div>
+                    </div>
+                    <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; margin-bottom: 25px;">
+                        <div style="font-size: 2.5rem; font-weight: 700; margin-bottom: 5px;">3</div>
+                        <div style="color: #888; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;" data-key="stat-languages">Langages Maîtrisés</div>
+                    </div>
+                    <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px;">
+                        <div style="font-size: 2.5rem; font-weight: 700; margin-bottom: 5px;">75+</div>
+                        <div style="color: #888; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;" data-key="stat-algorithms">Problèmes Algorithmiques Résolus</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div class="modal-overlay" id="contact-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3 style="margin-bottom: 30px; text-transform: uppercase;" data-key="modal-title">Partagez votre vision</h3>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nom" data-key="lbl-name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" data-key="lbl-email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Message" data-key="lbl-msg"></textarea>
+                </div>
+                <button type="submit" class="btn-submit" data-key="btn-send">Envoyer</button>
+            </form>
+            <div style="margin-top: 80px; font-size: 0.8rem; color: #888; display: flex; gap: 30px; align-items: center;">
+                <a href="https://linkedin.com/in/edouard-joggerst" target="_blank" style="color: #888; text-decoration: none; display: flex; align-items: center; gap: 8px; transition: 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#888'">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LINKEDIN
+                </a>
+                <a href="https://github.com/jxgedouard" target="_blank" style="color: #888; text-decoration: none; display: flex; align-items: center; gap: 8px; transition: 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#888'">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                    GITHUB
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">EJ.</div>
+                <div class="footer-copyright">&copy; 2025 Edouard Joggerst. <span data-key="footer-copyright">Tous droits réservés</span>.</div>
+            </div>
+
+            <div class="footer-links">
+                <h4 data-key="footer-nav">Navigation</h4>
+                <ul>
+                    <li><a href="index.html" data-key="nav-home">Accueil</a></li>
+                    <li><a href="projects.html" data-key="nav-projets">Projets</a></li>
+                    <li><a href="about.html" data-key="nav-about">À Propos</a></li>
+                    <li><a href="#" class="btn-contact" style="border: none; padding: 0; background: transparent; text-transform: none; font-size: 0.9rem; color: #888;" data-key="btn-contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-socials">
+                <h4 data-key="footer-socials">Connect</h4>
+                <ul>
+                    <li><a href="https://linkedin.com/in/edouard-joggerst" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/jxgedouard" target="_blank">GitHub</a></li>
+                    <li><a href="src/assets/cv.pdf" target="_blank" download style="color: #888;" data-key="footer-cv">Télécharger CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <audio id="bg-music" loop>
+        <source src="src/assets/background_sound.wav" type="audio/wav">
+    </audio>
+
+    <script src="src/js/main.js"></script>
+
+    <style>
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+
+</body>
+</html>
